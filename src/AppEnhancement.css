@@ -1,0 +1,58 @@
+/* Improve input size globally */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 12px !important;
+  font-size: 14px !important;
+  transition: all 0.3s ease;
+}
+
+/* Smooth hover animation */
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.04);
+}
+
+/* Professional focus glow */
+input:focus {
+  box-shadow: 0 0 0 2px rgba(234, 179, 8, 0.4);
+}
+
+/* Responsive improvement */
+@media (max-width: 1024px) {
+  .w-1\/2 {
+    width: 100% !important;
+  }
+
+  .flex {
+    flex-direction: column !important;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
